@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 public class ChuckNorisJokeImpl implements ChuckNorisJoke {
     public final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public ChuckNorisJokeImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public ChuckNorisJokeImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
